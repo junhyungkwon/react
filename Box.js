@@ -7,9 +7,7 @@ function Box(props){
   }
   return(
         <div className='Box'>
-      Box{props.num} 
-      {props.name}
-      <button onClick={clickMe}>수강하기</button>
+
       
     </div>
     )

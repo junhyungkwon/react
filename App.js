@@ -1,15 +1,28 @@
-import React from 'react';
+
 import './App.css';
-import Box from './Box'
 
 function App() {
+  const name = "jun1";
+  const naver = {
+    name : "네이버",
+    URL : "https://m.naver.com"
+  };
+  
   return (
-   <main>
-    <Box name = "html" num= "1"/>
-    <Box name = "css" num= "2"/>
-    <Box name = "js" num= "3"/>
-    <Box name = "react" num= "4"/>
-   </main>
+    <div className=' App'>
+      <h1
+      style={{
+        color: "#f0f",
+        backgroundColor: "green",
+
+      }}
+      >
+         hello, {name}, <p>{3+12}</p>
+      </h1>
+      <a href={naver.URL}>{naver.name}</a>
+    </div>
+
+  
   );
 }
 
