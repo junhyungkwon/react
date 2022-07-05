@@ -13,10 +13,9 @@ let [좋아요, 좋아요증가] = useState(0);
  function 제목수정(){
   var newArray = [...개발진행상황]
   newArray[0] = 'ui구현'
-  개발변경상황(newArray);
-
-  
-  
+  newArray[1] = '피드백'
+  newArray[2] = '배포'
+    개발변경상황(newArray);
  }
 
   return (
@@ -42,9 +41,21 @@ let [좋아요, 좋아요증가] = useState(0);
         <p>7월 6일 개발</p>
         <hr/>
     </div>
+    <Modal />
+    
     </div>
     
   );
+}
+
+function Modal(){
+  return(
+<div className='modal'>
+      <h2>제목</h2>
+      <p>날짜</p>
+      <p>내용</p>
+    </div>
+  )
 }
 
 export default App;
